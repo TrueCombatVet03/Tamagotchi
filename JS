@@ -1,0 +1,36 @@
+let hunger=80;
+let happiness=50;
+let energy=40;
+
+function displayInfo(){
+    document.getElementById("hungerInfo").innerHTML= `JS-🍱Hunger# ${hunger}`;
+    document.getElementById("happinessInfo").innerHTML=`JS-😸Happiness# ${happiness}`;
+    document.getElementById("energyInfo").innerHTML=`JS-🎭Energy# ${energy}`;
+}
+
+function feed(){
+    console.log("Feed function");
+    hunger=hunger -10;
+    happiness=happiness +10;
+    displayInfo();
+    
+    //affect vars
+    //call the displayInfo
+}
+
+function pet(){
+    console.log("Pet Function");
+    happiness=happiness +40;
+    hunger=hunger -15;
+    displayInfo();
+}
+
+function play(){
+    console.log("Play Function");
+    energy=energy +50;
+    hunger=hunger -20;
+    displayInfo();
+}
+
+displayInfo();
+
